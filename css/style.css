@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    h1, h2, h3,h4,h5{
+    font-family: 'Great Vibes', cursive;
+ }
+ p{
+    font-family:'Kaushan Script', cursive;
+    text-align: justify;
+ }
+ h1, h3{
+   text-align: center;
+   padding: 15px;
+ }
+ body{
+background-image: url(../assets/img/Fondo.jpg);
+ }
+ .header{
+    background-color: aquamarine;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding:5px 10% ;
+   width: 100%;
+   }
+ .header .logo{
+    cursor: pointer;
+ }
+ .header .logo img{
+    width: 110px;
+    transition: all 0.3s;
+ }
+ .header .logo img:hover{
+    transform: scale(1.2);
+ }
+ .header .links {
+    list-style: none;
+ }
+ .header .links li{
+    display: inline-block;
+    padding: 20PX;
+ }
+ .header .links li:hover{
+    background-color: hsl(60, 56%, 91%);
+    color: black;
+    transform: scale(1.2);
+   border-radius: 50px;
+ }
+ .header .links a{
+   font-family:'Kaushan Script', cursive;
+   font-size:1rem ;
+   color: rgb(31, 28, 28);
+   text-decoration: none;
+   padding: 20px;
+ }
+ .header .links a:hover{
+color: black;
+ }
+ @media screen and (max-width:480px){
+   .header{
+   display: flex;
+   flex-direction:column;
+   text-align: center;
+   align-items: center;
+   
+  }
+  
+}
+/*main de index*/
+article{
+   padding: 10px;
+}
+.container{
+   padding: 30px;
+}
+.link{
+   color: #643927;
+   text-decoration: none; 
+}
+
+ /*main de productos*/
+.color{
+   font-family:'Kaushan Script', cursive;
+   font-size: 1rem;
+   color: white;
+   background-color:#02686f ;
+   padding: 10px;
+   margin: 10px;
+  
+}
+.color:hover{
+   background-color:#b2c0cb ;
+   transform: scale(1.2);
+}
+.bordes{
+   border-radius: 50px ;
+     opacity: .80;
+}
+.bordes:hover {
+   border-radius: 50px;
+   opacity: 1;
+   transform: scale(1.1);
+}
+
+/*main contacto*/
+.formulario {
+   background-color:aqua;
+   padding: 2rem;
+   border-radius: 30px;
+}
+@media (min-width:768px) {
+   .formulario {
+       max-width: 800px;
+       margin: 0 auto;
+   }
+   }
+.contenedor-campos {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   font-family: 'Kaushan Script', cursive;
+}
+
+.campo {
+   margin-bottom: 1rem;
+   width: 100%;
+}
+@media (min-width:480px) 
+{
+   .campo {
+       
+       display: flex;
+       align-items: center;
+   }
+}
+@media (min-width: 768px) {
+   .campo{
+       flex: 0 0 calc(50% - .5rem)
+   }
+}
+.campo label {
+   color: var(--blanco);
+   font-weight: 700;
+   margin-bottom: .5rem;
+   display: block;
+}
+@media (min-width:480px) {
+   .campo label {
+       flex: 0 0 90px;
+   }
+}
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="mail"],
+.campo textarea {
+   width: 100%;
+   padding: .5rem;
+   border: none;
+   border-radius: .5rem;
+}
+@media (min-width: 768px) {
+   :is(.campo) :is( 
+       input[type="text"], 
+       input[type="text"],  
+       input[type="tel"],  
+       input[type="mail"] , 
+       textarea ) {
+       flex: 1;
+   }
+}
+.w-100{
+   flex: 0 0 100%;
+}
+.campo textarea {
+   height: 4rem;
+}
+.boton{
+   background-color: rgb(5, 5, 5);
+   color: white;
+   width: 100px;
+   padding: 10px;
+   font-size: 20px;
+   border-radius: 10px;
+   border:0;
+}
+.enviar {
+   display: flex;
+   justify-content: flex-end;
+}
+ /*footer*/
+
+ .footer{
+     background-color: aquamarine;
+     text-align: center;
+ }
+ .footer__1{
+   width: 100%;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+        padding: 45px;
+ }
+ .footer.box{
+   justify-content: center;
+  
+   
+ }
+.footer__box figure{
+   width: 100%; 
+   height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+.footer__img{
+   width: 180px;
+}
+
+.footer__box h3{
+   font-family: 'Great Vibes', cursive;
+   font-weight: bold;
+   font-size: 1.2rem;
+   margin: 12px;
+  }
+
+.footer__box p{
+   font-family:'Kaushan Script', cursive;
+   font-size: 0.8rem;
+   margin: 10px;
+}
+
+.footer__img-redes{
+   width: 45px;
+   margin: 10px;
+   justify-content: center;
+}
+ .footer__2{
+  background-color: aquamarine;
+  padding: 15px;
+  text-align: center;
+  }
+  @media screen and (max-width:480px){
+   .footer__1{
+     
+      grid-template-columns: repeat(1, 1fr);
+           padding: 25px;
+  }
+}
